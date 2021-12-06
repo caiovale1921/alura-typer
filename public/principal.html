@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <title>Alura Typer</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="center">Word Typer</h1>
+        <p class="frase center">Esta frase tem seis belas palavras.</p>
+
+        <ul class="informacoes center">
+            <li>
+                <i class="material-icons icones">description</i>
+                <span id="tamanhoFrase">56</span> palavras</li>
+            <li>
+                <i class="material-icons icones">query_builder</i>
+                <span id="tempo">5</span> Segundos
+            </li>
+        </ul>
+
+        <textarea name="" class="campoDigitacao" id="" cols="30" rows="10"></textarea>
+        
+        <a class="btn-floating btn-large waves-effect waves-light red disabled" id="reiniciarJogo">
+            <i class="material-icons disabled">restore</i>
+        </a>
+
+        <ul class="center">
+            <li><span id="caracteresCount">0</span> Caracteres</li>
+            <li><span id="palavrasCount">0</span> Palavras</li>
+        </ul>
+
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table class="centered bordered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Nº de palavras</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Caio</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>João</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
