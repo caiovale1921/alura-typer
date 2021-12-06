@@ -7,6 +7,7 @@ $(function(){
     initCronometro()
     initMarcadores()
     $("#reiniciarJogo").click(reiniciaJogo)
+    $("#reiniciarJogo").hide()
 })
 
 function atualizaTamanhoFrase(){
@@ -39,6 +40,7 @@ function initCronometro(){
                 clearInterval(intervalId)
                 $("#reiniciarJogo").attr("disabled", false)
                 campo.toggleClass("campoDisabled")
+                $("#reiniciarJogo").show()
             }
         }, 1000)
     })
@@ -71,6 +73,7 @@ function insertPlacar(){
 }
 
 function reiniciaJogo(){
+    $("#reiniciarJogo").hide()
     campo.attr("disabled", false)
     campo.val("")
     $("#tempo").text(tempoInicial)
